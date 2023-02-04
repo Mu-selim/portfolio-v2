@@ -1,0 +1,325 @@
+.main-section {
+    position: relative;
+    min-height: fit-content;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* background animation */
+.bubbles {
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+
+.bubbles span {
+    position: relative;
+    min-width: 24px;
+    height: 24px;
+    background: var(--mint-tint);
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: var(--bubbles-odd);
+    animation: var(--bubble-anim-odd);
+    animation-duration: calc(125s / var(--i));
+    z-index: -10;
+}
+
+.bubbles span:nth-child(even) {
+    background: var(--move-tint);
+    animation: var(--bubble-anim-even);
+    box-shadow: var(--bubbles-even);
+    animation-duration: calc(125s / var(--i));
+}
+
+@keyframes bubble-odd {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+@keyframes bubble-even {
+    0% {
+        transform: translateY(0vh) scale(0);
+    }
+    100% {
+        transform: translateY(100vh) scale(1);
+    }
+}
+
+/* main content */
+.main-inner-box {
+    width: 100%;
+    margin: 80px 0 0 0;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-personal-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 68px;
+}
+
+.main-title,
+.main-sub-title,
+.main-description {
+    color: var(--mint);
+}
+
+.main-title {
+    position: relative;
+    padding-top: 1.6rem;
+    font-size: 5rem;
+    font-family: var(--font-sans);
+}
+
+.main-title::before {
+    content: 'Hi, my name is';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.2rem;
+    color: var(--blue);
+    font-family: var(--font-mono);
+}
+
+.main-sub-title {
+    font-size: 3rem;
+    font-family: var(--font-sans);
+}
+
+.main-description {
+    font-size: 1rem;
+    font-family: var(--font-mono);
+    margin-bottom: 1.6rem;
+    padding-right: 20%;
+    line-height: 1.4rem;
+}
+
+.link-button {
+    margin-bottom: 1rem;
+}
+
+.outer-image-box {
+    min-width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+}
+
+.inner-image-box {
+    position: relative;
+    min-width: 300px;
+    height: 300px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: var(--transition);
+}
+
+.inner-image-box::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-left: 10px solid var(--mint);
+    border-top: 10px solid var(--mint);
+    border-top-left-radius: 10px;
+    transition: var(--transition);
+}
+
+.inner-image-box::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-right: 10px solid var(--mint);
+    border-bottom: 10px solid var(--mint);
+    border-bottom-right-radius: 10px;
+    transition: var(--transition);
+}
+
+.outer-image-box:hover .inner-image-box {
+    background-size: 120% 120%;
+}
+
+.outer-image-box:hover .inner-image-box::before {
+    top: -10px;
+    left: -10px;
+}
+
+.outer-image-box:hover .inner-image-box::after {
+    bottom: -10px;
+    right: -10px;
+}
+
+@media screen and (max-width: 950px) {
+    /* .main-inner-box {
+        margin-top: 56px;
+    } */
+    .main-description {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 888px) {
+    .main-personal-info {
+        padding-left: 48px;
+    }
+
+    .main-title {
+        font-size: 4rem;
+    }
+
+    .main-sub-title {
+        font-size: 2.5rem;
+    }
+
+    .outer-image-box {
+        min-width: 350px;
+        height: 350px;
+    }
+    
+    .inner-image-box {
+        min-width: 260px;
+        height: 260px;
+    }    
+}
+
+@media screen and (max-width: 757px) {
+    .main-section {
+        min-height: fit-content;
+    }
+    .main-inner-box {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 56px;
+    }
+
+    .outer-image-box {
+        min-width: 300px;
+        height: 300px;
+    }
+    
+    .inner-image-box {
+        min-width: 260px;
+        height: 260px;
+    }
+
+    .inner-image-box::before {
+        top: -20px;
+        left: -20px;
+    }
+    
+    .inner-image-box::after {
+        bottom: -20px;
+        right: -20px;
+    }
+    
+    .main-personal-info {
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .main-title {
+        align-items: center;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .main-title::before {
+        font-size: 0.8rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .main-sub-title {
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    .main-description {
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .outer-image-box {
+        min-width: 260px;
+        height: 260px;
+    }
+    
+    .inner-image-box {
+        min-width: 200px;
+        height: 200px;
+    }
+
+    .inner-image-box::before {
+        top: -20px;
+        left: -20px;
+        width: 32px;
+        height: 32px;
+        border-left: 6px solid var(--mint);
+        border-top: 6px solid var(--mint);
+    }
+    
+    .inner-image-box::after {
+        bottom: -20px;
+        right: -20px;
+        width: 32px;
+        height: 32px;
+        border-right: 6px solid var(--mint);
+        border-bottom: 6px solid var(--mint);
+    }
+
+    .main-description {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-height: 780px) {
+    .main-inner-box {
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-height: 840px) {
+    .main-personal-info {
+        gap: 0.4rem;
+    }
+
+    .main-title {
+        font-size: 3.6rem;
+    }
+
+    .main-description {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-height: 900px) {
+    .main-title {
+        font-size: 4rem;
+    }
+
+    .main-description {
+        font-size: 1rem;
+    }
+}

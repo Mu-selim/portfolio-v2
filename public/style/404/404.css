@@ -1,0 +1,64 @@
+body {
+    background: var(--move)
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/public/images/logoBackground.svg), var(--move);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    max-width: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.content h2 {
+    font-size: 14rem;
+    color: var(--blue);
+    font-family: var(--font-mono);
+}
+
+.content h4 {
+    position: relative;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--white);
+    background: var(--blue);
+    font-weight: 300;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: inline-block;
+}
+
+.content p {
+    color: var(--blue);
+    font-size: 1.2rem;
+    font-family: var(--font-mono);
+}
+
+.content a {
+    text-transform: capitalize;
+}
+
+@media (max-width: 440px) {
+    .content h2 {
+        font-size: 10rem;
+    }
+
+    .content h4 {
+        font-size: 1.2rem;
+    }
+}

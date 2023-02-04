@@ -1,0 +1,158 @@
+.about-section {
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-section-title {
+    position: relative;
+    font-size: 2rem;
+    color: var(--mint);
+    font-family: var(--font-sans);
+    text-transform: capitalize;
+    text-align: start;
+    padding-left: 44px;
+}
+
+.about-section-title::before {
+    counter-increment: section 1;
+    content: "0" counter(section) ".";
+    position: absolute;
+    left: 0;
+    top: 38%;
+    transform: translateY(-50%);
+    color: var(--blue);
+    font-size: 1.4rem;
+    font-family: var(--font-mono);
+    font-weight: 400;
+}
+
+.about-section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 110%;
+    height: 1px;
+    transform: translateY(-4px);
+    background-color: var(--mint);
+}
+
+.about-paragraphs-techs {
+    margin: 0px 64px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.about-paragraphs {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-paragraphs p {
+    color: var(--mint);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: var(--font-mono);
+}
+
+.about-technologies {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.about-technologies h2 {
+    color: var(--mint);
+    font-size: 1.6rem;
+    font-family: var(--font-sans);
+}
+
+.about-technologies-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.tech-list-item {
+    position: relative;
+    padding-left: 1rem;
+    color: var(--mint);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+}
+
+.tech-list-item::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    top: 35%;
+    transform: translateY(-50%);
+    color: var(--blue);
+}
+
+@media screen and (max-width: 757px) {
+    .about-paragraphs-techs {
+        margin: 0px 0.8rem;
+    }    
+}
+
+@media screen and (max-width: 624px) {
+    .about-section {
+        align-items: start;
+    }
+
+    .about-section-title {
+        text-align: start;
+        margin-left: 0.8rem;
+    }
+
+    .about-paragraphs-techs {
+        flex-direction: column;
+    }    
+
+    .about-paragraphs {
+        width: 100%;
+    }
+
+    .about-technologies {
+        width: 100%;
+    }    
+
+    .about-technologies-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tech-list-item {
+        width: 40%;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .about-paragraphs p {
+        font-size: 0.8rem;
+    }
+
+    .about-technologies h2 {
+        font-size: 1.4rem;
+    }
+    
+    .about-technologies-list {
+        flex-direction: column;
+    }
+
+    .tech-list-item {
+        width: 100%;
+    }
+}

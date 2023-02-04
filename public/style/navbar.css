@@ -1,0 +1,171 @@
+.navbar {
+    counter-reset: item;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background-color: var(--navy-tint);
+    transition: var(--transition);
+}
+
+.logo-box {
+    width: 40px;
+    height: 40px;
+    z-index: 20;
+    transition: var(--transition);
+}
+
+.logo-box:hover {
+    background-color: var(--blue-tint);
+}
+
+.logo-box img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-list-item {
+    transition: var(--transition);
+}
+
+.nav-list-item a {
+    position: relative; 
+    padding-left: 2rem;
+    font-size: 16px;
+    font-family: var(--font-mono);
+    color: var(--white);
+    text-transform: capitalize;
+    transition: var(--transition);
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.nav-list-item a:hover {
+    color: var(--blue);
+}
+
+.nav-list-item a::before {
+    counter-increment: item 1;
+    content: "0" counter(item) ".";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    color: var(--blue);
+}
+
+.nav-list-item:last-child a {
+    padding: 8px 16px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    border-radius: 6px;
+}
+
+.nav-list-item:last-child a:hover {
+    background-color: var(--blue-tint);
+}
+
+.nav-list-item:last-child a::before {
+    content: "";
+}
+
+/* burger menu */
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    padding: 0;
+    z-index: 20;
+    user-select: none;
+}
+.line {
+    fill: none;
+    stroke: #89C4E1;
+    stroke-width: 6;
+    transition: var(--menu);
+}
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+
+@media screen and (max-width: 686px) {
+    .nav-list {
+        position: fixed;
+        top: 0;
+        right: -1000px;
+        height: 100vh;
+        width: max(50vw, 250px);
+        padding: 0px 20px;
+        background-color: var(--dark-navy);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.4rem;
+        transition: var(--transition);
+    }
+
+    .nav-list.opened {
+        right: 0;
+    }
+
+    .nav-list-item a {
+        padding: 1.4rem 0 0 0;
+        font-size: 1.4rem;
+    }
+
+    .nav-list-item a::before {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.2rem;
+    }
+
+    .menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navbar {
+        padding: 0.8rem 1rem;
+    }
+}

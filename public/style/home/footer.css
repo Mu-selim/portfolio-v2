@@ -1,0 +1,39 @@
+.footer {
+    padding: 1rem 0;
+}
+
+.footer a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    color: var(--mint);
+    font-family: var(--font-mono);
+    font-weight: 200;
+    transition: var(--transition);
+}
+
+.footer a:hover {
+    color: var(--blue);
+}
+
+.design-built {
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    font-weight: 200;
+}
+
+.statistics-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.8rem;
+}
+
+.stars-icon,
+.fork-icon {
+    width: 1rem;
+    height: 1rem;
+}

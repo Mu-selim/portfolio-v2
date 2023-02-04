@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Calibre";
+    src: url("/public/fonts/Calibre/Calibre-Regular.ttf") format('truetype'),
+         url("/public/fonts/Calibre/Calibre-Regular.woff") format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SF Mono";
+    src: url("/public/fonts/SFMono/SFMono-Regular.ttf") format('truetype'),
+         url("/public/fonts/SFMono/SFMono-Regular.woff") format('woff');
+    font-weight: normal;
+}
+
+:root {
+    /* colors */
+    --beige: #F5EDCE;
+    --blue: #89C4E1;
+    --blue-tint: #89C4E140;
+    --blue-dark: #5B8FB9;
+    --purple: #58287F;
+    --black: #1A0000;
+    --mint: #B6EADA;
+    --mint-tint: #B6EADACC;
+    --move: #301E67;
+    --move-tint: #301E6790;
+    --navy: #03001C;
+    --navy-tint: #03001C50;
+    --dark-navy: #020c1b;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2,12,27,0.7);
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #00ff00;
+    --red: #ff0000;
+    
+    /* fonts */
+    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+
+    /* transitions */
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    --easing: cubic-bezier(0.645,0.045,0.355,1);
+    --menu: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+            stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* box shadows */
+    --bubbles-odd: 0 0 0 6px #B6EADA44, 0 0 50px #B6EADA, 0 0 100px #B6EADA;
+    --bubbles-even: 0 0 0 6px #301E6744, 0 0 50px #301E67, 0 0 100px #301E67;
+
+    /* animation durations */
+    --bubble-duration: calc(125s / var(--i));
+
+    /* animations */
+    --bubble-anim-odd: bubble-odd 2s linear infinite;
+    --bubble-anim-even: bubble-even 2s linear infinite;
+    --spinner-anim: spinner-c7wet2 1s infinite linear;
+
+    /* box shadows */
+    --shadow: 0 10px 30px -15px #301E67;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border: 3px solid var(--navy);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--navy);
+}
+
+/* text selection style */
+::selection {
+    color: var(--mint);
+    background: var(--move);
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: var(--mint);
+    background: var(--move);
+}
+
+/* link highlight style */
+a {
+    text-decoration: none;
+}
+
+.highlight-link {
+    position: relative;
+    color: var(--blue);
+    white-space: nowrap;
+}
+
+.highlight-link::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 8px;
+    background-color: var(--mint);
+    transition: var(--transition);
+}
+
+.highlight-link:hover::before {
+    width: 100%;
+}
+
+/* list style */
+ul {
+    list-style: none;
+}
+
+.link-button {
+    width: fit-content;
+    padding: 1rem 1.4rem;
+    border-radius: 4px;
+    border: 1px solid var(--blue);
+    color: var(--mint);
+    font-family: var(--font-mono);
+    transition: var(--transition);
+}
+
+.link-button:hover {
+    background-color: var(--blue-tint);
+}
+
+@media screen and (max-width: 300px) {
+    .link-button {
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 0.6rem 0.8rem;
+    }
+}
