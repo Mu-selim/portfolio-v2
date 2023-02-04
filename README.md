@@ -9,7 +9,7 @@
     Previous iteration: <a href="https://github.com/Mu-selim/v1">v1</a>
 </p>
 <div align="center">
-  <img alt="preview" src="public/images/favicon.svg" width="100" />
+  <img alt="preview" src="public/images/preview.png" />
 </div>
 
 # **Documentation and Licence**
