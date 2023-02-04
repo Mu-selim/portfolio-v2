@@ -34,32 +34,13 @@ Finally, you can fork this repo and give me credit [Muhammad Selim](https://www.
    ```bash
    npm init
    ```
-3. Install Tailwind CSS
+3. Install Node packages
    ```bash
-   npm install -D tailwindcss
-   npx tailwindcss init
+   npm install express ejs body-parser fs path nodemon cors
    ```
-4. Configure your template paths
-   ```js
-   /** @type {import('tailwindcss').Config} */
-   module.exports = {
-   content: ["./src/**/*.{html,js}"],
-   theme: {
-     extend: {},
-   },
-   plugins: [],
-   }
-   ```
-4. Install Node packages
+3. Start the server
    ```bash
-   npm install express ejs body-parser fs path nodemon
-   ```
-5. Configure your build process
-   ```js
-   // package.json
-   "scripts": {
-     "build": "tailwindcss build src/input.css -o dist/output.css"
-   }
+   npm run build
    ```
 
 
