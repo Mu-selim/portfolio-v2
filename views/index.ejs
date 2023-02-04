@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property='og:title' content='Muhammad Selim'/>
+    <meta property='og:image' content='/public/images/metadata.png'/>
+    <meta property='og:description' content="I am a software engineer who specializes in building and designing exceptional digital experiences. Currently, my focus is on creating accessible and human-centered products."/>
+    <meta property='og:url' content='https://muhammadselim.tech'/>
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='628' />
+    <meta property="og:type" content='website'/>
+    <meta name="author" content="Muhammad Selim">
+
+    <title>Muhammad Selim</title>
+    <link rel="shortcut icon" href="/public/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/public/style/root.css">
+    <link rel="stylesheet" href="/public/style/home/general.css">
+    <link rel="stylesheet" href="/public/style/asideMedia.css">
+    <link rel="stylesheet" href="/public/style/navbar.css">
+    <link rel="stylesheet" href="/public/style/home/mainSection.css">
+    <link rel="stylesheet" href="/public/style/home/aboutSection.css">
+    <link rel="stylesheet" href="/public/style/home/workSection.css">
+    <link rel="stylesheet" href="/public/style/home/projects.css">
+    <link rel="stylesheet" href="/public/style/home/contactSection.css">
+    <link rel="stylesheet" href="/public/style/home/footer.css">
+    <link rel="stylesheet" href="/public/style/home/loadAnimations.css">
+
+    <script src="/public/scripts/consoleMessage.js"></script>
+    <!-- components -->
+    <script src="/public/scripts/markdownToHtml.js"></script>
+    <script src="/public/scripts/components/icons/github.js"></script>
+    <script src="/public/scripts/components/icons/linkedin.js"></script>
+    <script src="/public/scripts/components/icons/twitter.js"></script>
+    <script src="/public/scripts/components/icons/instagram.js"></script>
+    <script src="/public/scripts/components/icons/externalLink.js"></script>
+    <script src="/public/scripts/components/icons/star.js"></script>
+    <script src="/public/scripts/components/icons/folder.js"></script>
+    <script src="/public/scripts/components/icons/fork.js"></script>
+    <script src="/public/scripts/components/elements/navbar.js"></script>
+    <script src="/public/scripts/components/elements/loadingPage.js"></script>
+    <script src="/public/scripts/components/elements/socialMenu.js"></script>
+
+    <!-- particles.js -->
+    <script defer src="/public/scripts/particlesjs/particles.js"></script>
+    <script defer src="/public/scripts/particlesjs/app.js"></script>
+
+    <script defer src="/public/scripts/home/apiLoad.js"></script>
+    <script defer src="/public/scripts/navbarFunctions.js"></script>
+    <script defer src="/public/scripts/home/noteworthyLoad.js"></script>
+    <script defer src="/public/scripts/home/contact.js"></script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body class="loaded">
+    <div class="back-blur"></div>
+    <div id="particles-js"></div>
+    <script src="/public/scripts/home/components.js"></script>
+
+    <section class="main-section">
+        <div class="bubbles">
+            <% for (let i = 0; i < 40; i++) { %>
+                <span style="--i:<%= Math.floor(Math.random() * 30) + 1 %>"></span>
+            <% } %>
+        </div>
+        <main class="main-inner-box">
+            <div class="main-personal-info">
+                <h1 id="main-title" class="main-title"></h1>
+                <h3 id="main-sub-title" class="main-sub-title"></h3>
+                <p id="main-description" class="main-description"></p>
+                <a id="main-button" class="link-button" href="" target="_blank"></a>
+            </div>
+            <div class="outer-image-box">
+                <div id="inner-image-box" class="inner-image-box"></div>
+            </div>
+        </main>
+    </section>
+    <section id="about-section" class="about-section">
+        <h2 id="about-section-title" class="about-section-title">about me</h2>
+        <div class="about-paragraphs-techs">
+            <div id="about-paragraphs" class="about-paragraphs"></div>
+            <div class="about-technologies">
+                <h2>Here are a few technologies I’ve been working with recently:</h2>
+                <ul id="about-technologies-list" class="about-technologies-list"></ul>
+            </div>
+        </div>
+    </section>
+    <section id="work-section" class="work-section">
+        <h2 id="work-section-title" class="work-section-title"></h2>
+        <div id="work-experience-box" class="work-experience-box">
+            <div class="work-divider"></div>
+        </div>
+    </section>
+    <section id="projects-section" class="projects-section">
+        <section id="featured-section" class="featured-section"></section>
+        <section id="noteworthy-section" class="noteworthy-section">
+            <h2 class="noteworthy-header">Other Noteworthy Projects</h2>
+            <div id="noteworthy-grid" class="noteworthy-grid"></div>
+        </section>
+        <button id="more-less-btn" class="more-less-btn">
+            <div class="noteworthy-spinner"></div>
+            <span id="more-less-text">show more</span>
+        </button>
+    </section>
+    <section id="contact-section" class="contact-section">
+        <h2 id="contact-header" class="contact-header">What’s Next?</h2>
+        <span id="contact-message" class="contact-message">get in touch</span>
+        <div id="form-box" class="form-box">
+            <form class="contact-form">
+                <div class="form-contact-name">
+                    <input
+                        id="form-name-input"
+                        spellcheck="false" 
+                        type="text"
+                        placeholder="Your Name"/>
+                </div>
+                <div class="form-contact-email">
+                    <input
+                        id="form-email-input"
+                        spellcheck="false" 
+                        type="text"
+                        placeholder="Your Email"/>
+                    <div class="contact-email-spinner"></div>
+                </div>
+                <div id="form-alert" class="form-alert">Invalid email address</div>
+                <div class="form-contact-message">
+                    <textarea id="form-message-input" placeholder="Your Message"></textarea>
+                </div>
+                <div class="form-submit">
+                    <button id="form-submit-button" type="submit">
+                        <div class="form-submit-spinner"></div>
+                        <span id="form-submit-text">send message</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer"></footer>
+    <div id="green-alert" class="green-alert"></div>
+    <div id="red-alert" class="red-alert"></div>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EPXC3CPK6W"></script>
+    <script src="/public/scripts/google.js"></script>
+</body>
+</html>

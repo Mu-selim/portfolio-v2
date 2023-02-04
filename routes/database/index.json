@@ -1,0 +1,284 @@
+{
+    "metadata": {
+        "title": "Muhammad Selim",
+        "description": "Skilled software engineer with experience in JavaScript, CSS, Tailwind, Node.js, and Express.js. I create dynamic, high-performing web applications. My expertise in the latest technologies ensures that my solutions are cutting-edge. My attention to detail produces visually stunning and technically sound websites.",
+        "linkedin": "https://www.linkedin.com/in/selimjs",
+        "twitter": "https://twitter.com/_selimjs",
+        "github": "https://github.com/Mu-selim",
+        "instagram": "https://www.instagram.com/dev.selim",
+        "email": "muhamadselim70@gmail.com",
+        "repo": "https://github.com/Mu-selim/v2",
+        "deployment": null
+    },
+    "main": {
+        "title": "Muhammad Selim",
+        "first_name": "Muhammad",
+        "last_name": "Selim",
+        "sub_title": "I make websites.",
+        "job": "Software Engineer",
+        "description": "I am a software engineer who specializes in building and designing exceptional digital experiences. Currently, my focus is on creating accessible and human-centered products.",
+        "button_text": "Check out my GitHub!",
+        "button_link": "https://github.com/Mu-selim",
+        "personal_picture": "https://raw.githubusercontent.com/Mu-selim/v1/master/personalPic/formalPicSquare.webp"
+    },
+    "about": {
+        "section": "about me",
+        "personal_picture": "https://raw.githubusercontent.com/Mu-selim/v1/master/personalPic/formalPicSquare.webp",
+        "paragraphs": [
+            "Hello! My name is Muhammad and I am a computer engineering student. My interest in web development started back in 2020 when I decided to learn how web pages are being built — This motivated me to start learning a lot about HTML & CSS!",
+            "Fast-forward to today, and I’ve had the privilege of working at [a start-up](https://www.linkedin.com/company/gmind), [a huge corporation](https://www.ibm.com/eg-en), and [student activity](https://www.acm.org/). My main focus these days is building modern, accessible, fast and digital experiences at [Upwork](https://www.upwork.com) for a variety of clients.",
+            "I also recently finished the [Professional Front-End Web Development](https://graduation.udacity.com/confirm/DCSMARQZ) program from [Udacity](https://www.udacity.com/) and [egFWD](https://egfwd.com)."
+        ],
+        "technologies": [
+            "JavaScript(ES6+)",
+            "Node.js",
+            "Express.js",
+            "HTML",
+            "CSS",
+            "Tailwind",
+            "Bootstrap",
+            "Git",
+            "C#",
+            "SQL"
+        ]
+    },
+    "experience": {
+        "section": "where I’ve worked",
+        "years": "1+",
+        "counter": "4",
+        "places": [
+            {
+                "title": "Gmind",
+                "job": "developer intern",
+                "start_year": "2022",
+                "start_month": "august",
+                "end_year": "2022",
+                "end_month": "december",
+                "site": "https://www.linkedin.com/company/gmind/mycompany",
+                "description": [
+                    "Developed GMind's Android application for educational purposes using Java and XML",
+                    "Collaborated with designers and management team to develop and manage company application",
+                    "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis",
+                    "Acquired knowledge of Version Control (Git) and Linux commands"
+                ]
+            },
+            {
+                "title": "ITI",
+                "job": "front-end intern",
+                "start_year": "2022",
+                "start_month": "february",
+                "end_year": "2022",
+                "end_month": "march",
+                "site": "https://www.iti.gov.eg",
+                "description": [
+                    "Completed a 60-hour intensive training program in front-end development, focused on HTML, CSS, and JavaScript(ES6)",
+                    "Practiced skills through the development of small projects including a stopwatch and form validation using pure JavaScript"
+                ]
+            },
+            {
+                "title": "IBM eg",
+                "job": "software intern",
+                "start_year": "2022",
+                "start_month": "february",
+                "end_year": "2022",
+                "end_month": "march",
+                "site": "https://www.ibm.com/eg-en",
+                "description": [
+                    "Developed and maintained code for a landing page using HTML, CSS, and JavaScript",
+                    "Tested sites in several browsers and mobile devices to ensure cross-browser compatibility and responsiveness",
+                    "Added some unit tests using Jest framework"
+                ]
+            },
+            {
+                "title": "ACM",
+                "job": "chairman",
+                "start_year": "2022",
+                "start_month": "may",
+                "end_year": "2022",
+                "end_month": "october",
+                "site": "https://www.acm.org",
+                "description": [
+                    "Held **Game Of Coders 3.0** contest, it is a competitive programming contest, and 26 teams participated in it",
+                    "Made the plan of the **Team Operations** sub-committee, which is responsible for developing the chapter and evaluating its progress",
+                    "Spearheaded more than 35 teams from Mansoura to ECPC qualification, 7 teams to ECPC and 2 teams to ACPC",
+                    "Trained +190 students on competitive programming using C++"
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "section": "some things I’ve built",
+        "featured": [
+            {
+                "title": "Personal Website v1",
+                "description": "First iteration of my personal website built with JavaScript, [GitHub APIs](https://docs.github.com/en/rest/users?apiVersion=2022-11-28), CSS, HTML and hosted on [Cloudflare](https://www.cloudflare.com).",
+                "tools": [
+                    "JavaScript",
+                    "APIs",
+                    "CSS",
+                    "HTML",
+                    "Responsive",
+                    "Flexbox & Grid"
+                ],
+                "github": "https://github.com/Mu-selim/v1",
+                "extrnal_link": "https://muhammadselim.pages.dev",
+                "image": "https://github.com/Mu-selim/v1/raw/master/images/preview.png"
+            },
+            {
+                "title": "Loopstudios",
+                "description": "A static landing page covers mostly all screen sizes, built using HTML, CSS and Vanilla javascript.",
+                "tools": [
+                    "JavaScript",
+                    "CSS",
+                    "HTML",
+                    "Responsive",
+                    "Flexbox & Grid",
+                    "Styled Components"
+                ],
+                "github": "https://github.com/Mu-selim/Loopstudios-landing-page",
+                "extrnal_link": "https://mu-selim.github.io/Loopstudios-landing-page",
+                "image": "https://raw.githubusercontent.com/Mu-selim/v1/master/images/projects/LoopstudiosLandingPage.webp"
+            },
+            {
+                "title": "Advice Generator App",
+                "description": "An advice generator app fetches Advice [Slip API](https://api.adviceslip.com) and updates the UI with the new advice generated. It will help if you want to know a random quote.",
+                "tools": [
+                    "JavaScript",
+                    "API",
+                    "HTML",
+                    "CSS"
+                ],
+                "github": "https://github.com/Mu-selim/Advice-generator-app",
+                "extrnal_link": "https://mu-selim.github.io/Advice-generator-app",
+                "image": "https://raw.githubusercontent.com/Mu-selim/v1/master/images/projects/adviceGenerator.webp"
+            },
+            {
+                "title": "Sunnyside agency",
+                "description": "A frontend mentor challenge, the Landing page helps marketers achieve various objectives as a result of numerous marketing goals.",
+                "tools": [
+                    "JavaScript",
+                    "HTML",
+                    "CSS",
+                    "Styled Components",
+                    "Responsive"
+                ],
+                "github": "https://github.com/Mu-selim/Sunnyside-landing-page",
+                "extrnal_link": "https://mu-selim.github.io/Sunnyside-landing-page",
+                "image": "https://raw.githubusercontent.com/Mu-selim/v1/master/images/projects/SunnysideLandingPage.webp"
+            },
+            {
+                "title": "Intro Section",
+                "description": "A single-page web page for the introduction section with dropdown navigation and a responsive navigation bar too.",
+                "tools": [
+                    "JavaScript",
+                    "HTML",
+                    "CSS"
+                ],
+                "github": "",
+                "extrnal_link": "https://mu-selim.github.io/Intro-section-with-dropdown-navigation",
+                "image": "https://raw.githubusercontent.com/Mu-selim/v1/master/images/projects/IntroSection.webp"
+            }
+        ],
+        "noteworthy_projects": [
+            {
+                "title": "GitHub profile",
+                "description": "A simple look at your GitHub profile and repos. Includes data visualizations of your profile and starred repositories.",
+                "tools": [
+                    "JavaScript",
+                    "API",
+                    "CSS",
+                    "HTML"
+                ],
+                "github": "https://github.com/Mu-selim/GitHub-API-fetch",
+                "extrnal_link": "https://mu-selim.github.io/GitHub-API-fetch"
+            },
+            {
+                "title": "Mathematical calculator",
+                "description": "A mathematical calculator built using stack data structure and Postfix expression **Reverse Polish notation**.",
+                "tools": [
+                    "JavaScript",
+                    "Stack",
+                    "CSS"
+                ],
+                "github": "https://github.com/Mu-selim/Calculator",
+                "extrnal_link": "https://mu-selim.github.io/Calculator"
+            },
+            {
+                "title": "Next Mangement System",
+                "description": "An employee management system windows application which is built and released using (C#) .net framework and MS SQL server.",
+                "tools": [
+                    "C#",
+                    "MS SQL",
+                    ".NET Framework"
+                ],
+                "github": "https://github.com/Mu-selim/Empolyee-Management-System-Next",
+                "extrnal_link": null
+            },
+            {
+                "title": "Weather App",
+                "description": "An asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App.",
+                "tools": [
+                    "JavaScript",
+                    "OpenWeather API",
+                    "CSS"
+                ],
+                "github": "https://github.com/Mu-selim/Weather-Journal-App",
+                "extrnal_link": null
+            },
+            {
+                "title": "Udacity Landing Page",
+                "description": "The first project in FWD professional web program to apply the knowledge of JavaScript and the Document Object Model (DOM) by buliding a multi-section page with a dynamically navigation menu.",
+                "tools": [
+                    "JavaScript",
+                    "dynamic navigation",
+                    "Dom",
+                    "Responsive"
+                ],
+                "github": "https://github.com/Mu-selim/landing-page-udacity",
+                "extrnal_link": "https://mu-selim.github.io/landing-page-udacity"
+            },
+            {
+                "title": "Microsoft Portfolio",
+                "description": "A digital resume with a Microsoft windows theme.",
+                "tools": [
+                    "JavaScript",
+                    "HTML",
+                    "CSS"
+                ],
+                "github": "https://github.com/Mu-selim/microsoft-portfolio",
+                "extrnal_link": "https://mu-selim.github.io/microsoft-portfolio"
+            },
+            {
+                "title": "QR attendance app",
+                "description": "A QR application can be used to scan, generate, and record QR codes.",
+                "tools": [
+                    "Java",
+                    "Android",
+                    "XML"
+                ],
+                "github": "https://github.com/Mu-selim/QR-attendance",
+                "extrnal_link": null
+            },
+            {
+                "title": "Order Summary",
+                "description": "An order summary component shows the deployment of a payment web page.",
+                "tools": [
+                    "CSS",
+                    "HTML"
+                ],
+                "github": "https://github.com/Mu-selim/Order-summary-component",
+                "extrnal_link": "https://mu-selim.github.io/Order-summary-component"
+            }
+        ]
+    },
+    "contact": {
+        "section": "what’s next?",
+        "sub_header": "get in touch"
+    },
+    "footer": {
+        "title": "Designed & Built by Muhammad Selim",
+        "repo_link": "https://github.com/Mu-selim/v2",
+        "stars": "12",
+        "forks": "7"
+    }
+}
